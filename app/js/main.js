@@ -9,5 +9,9 @@ $(function(){
             return false;
         });
 
+    $(".close_btn").on("click", function(){
+        $(".about__items-info").slideUp();
+    })
+
     var mixer = mixitup('.portfolio__gallery-wrapper');
 });

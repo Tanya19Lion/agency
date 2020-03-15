@@ -322,3 +322,122 @@
 .tab_content-triangle.matt {
     left: 1055px;
 }
+.close_btn {
+    width: 13px;
+    height: 13px;
+    background-image: url(../images/icons/x_icon.png);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+//end about
+
+//start skills
+.skills {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    text-align: center;
+    &__text {
+        max-width: 770px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        color: $text;
+    }
+}
+.skills__inner {
+    display: flex;
+    text-align: left;
+    &-company {
+        max-width: 575px;
+        margin-right: 25px;
+    }
+    &-title {
+        font-size: 25px;
+        color: $blue;
+        margin-bottom: 25px;
+    }
+    &-text {
+        color: $text;
+        margin-bottom: 22px;
+    }
+    &-btn {
+        background-color: $blue;
+        color: #fff;
+        padding: 18px 45px;
+    }
+    &-level {
+        width: 520px;
+    }
+    &-html,
+    &-js,
+    &-design,
+    &-photo {
+        display: block;
+        background-color: $blue;
+        padding: 10px 15px 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+// end skills
+
+//start achievements
+.achievements {
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__wrapper {
+        background-color: rgba(34, 44, 64, 0.8); 
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+.achievements__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-number {
+        font-size: 40px;
+    }
+}
+.customers,
+.awards,
+.projects, 
+.followers{
+    position: relative;
+    padding-left: 85px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 77px;
+        height: 75px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../images/icons/human_icon.png);
+    }
+}
+.awards {
+    &::before {
+        width: 77px;
+        height: 68px;
+        background-image: url(../images/icons/heart_icon.png);
+    }
+}
+.projects {
+    &::before {
+        width: 58px;
+        height: 71px;
+        background-image: url(../images/icons/clock.png);
+    }
+}
+.followers {
+    &::before {
+        width: 70px;
+        height: 56px;
+        background-image: url(../images/icons/dove.png);
+    }
+}
+//end achievements
