@@ -9,6 +9,57 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.container-menu {
+    position: relative;
+}
+.header__menu {
+    max-width: 340px;
+    height: 793px;
+    background-color: $darkblue;
+    padding: 50px;
+    padding-left: 30px;
+    position: absolute;
+    top: -1000px;
+    right: 0%;
+    z-index: 3;
+    transition: all .7s;
+    &-logo {
+        margin-bottom: 55px;
+    }
+    &-list a {
+        color: #fff;
+        font-size: 20px;
+        width: 100%;
+        transition: all 0.5s;
+        &:hover {
+            color: $text;
+            transform: scale(1.2);
+            margin-left: 25px;
+        }
+    }
+    &-list li {
+        margin-bottom: 20px;
+
+    }
+    &-social li {
+        display: inline-block;
+        & + li {
+            margin-left: 17px;
+        }
+    }
+}
+.header__close-btn {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-image: url(../images/icons/x_icon.png);
+    top: 0px;
+    right: 0px;
+}
+.header__menu.active {
+    top: 0;
+}
+
 //end header
 
 // start main
@@ -179,6 +230,35 @@
         background-color: $blue;
         color: #fff;
         padding: 20px 35px;
+        border: 1px solid transparent;
+        transition: all .5s;
+        &:hover {
+            background-color: #ffffff;
+            color: $darkblue;
+            border-color: $darkblue;
+        }
+    }
+}
+.portfolio__gallery-item {
+    &:nth-child(1),
+    &:nth-child(3),
+    &:nth-child(5) {
+        animation-delay: .3s;
+    }
+    &:nth-child(2),
+    &:nth-child(6),
+    &:nth-child(10) {
+        animation-delay: .5s;
+    }
+    &:nth-child(3),
+    &:nth-child(7),
+    &:nth-child(11) {
+        animation-delay: .7s;
+    }
+    &:nth-child(4),
+    &:nth-child(8),
+    &:nth-child(12) {
+        animation-delay: .9s;
     }
 }
 
@@ -371,6 +451,13 @@
         background-color: $blue;
         color: #fff;
         padding: 18px 45px;
+        border: 1px solid transparent;
+        transition: all .5s;
+        &:hover {
+            background-color: #ffffff;
+            color: $darkblue;
+            border-color: $darkblue;
+        }
     }
     &-level {
         width: 520px;
@@ -413,6 +500,7 @@
 .followers{
     position: relative;
     padding-left: 85px;
+    color: #fff;
     &::before {
         content: "";
         position: absolute;
@@ -492,6 +580,13 @@
             background-color: $blue;
             padding: 20px 40px;
             cursor: pointer;
+            border: 1px solid transparent;
+            transition: all .5s;
+            &:hover {
+                background-color: #ffffff;
+                color: $darkblue;
+                border-color: $darkblue;
+            }
         }
     }
 }
@@ -588,7 +683,7 @@
     border-right: 20px solid transparent;
     border-bottom: 30px solid $darkblue;
     position: absolute;
-    bottom: 351px;
+    bottom: 372px;
     left: 55px;
 }
 .news__inner {
@@ -757,7 +852,11 @@
         background-color: #fff;
         padding: 20px 55px;
         border: none;
-        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
+        transition: all .5s;
+        &:hover {
+            background-color: $darkblue;
+            color: #fff;
+        }
     }
 }
 //end contacts
