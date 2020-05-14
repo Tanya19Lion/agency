@@ -24,7 +24,8 @@ gulp.task('script', function(){
         'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
         'node_modules/rateyo/src/jquery.rateyo.js',
         'node_modules/mixitup/dist/mixitup.js',
-        'node_modules/wow.js/dist/wow.js'
+        'node_modules/wow.js/dist/wow.js',
+        'node_modules/jquery-parallax.js/parallax.js'
     ])    
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -63,7 +64,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function(){
-    gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
     gulp.watch('app/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
