@@ -9,7 +9,7 @@
   "author": "Tanya Tritelnitskaya",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mkdir": "0.0.2",
     "normalize.css": "^8.0.1"
   },
